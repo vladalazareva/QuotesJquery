@@ -1,0 +1,32 @@
+body{
+	cursor: default;
+	font-size: 48px;
+	font-style: italic;
+	text-align: center;
+	background: #FAFAD2;
+}
+.container{
+	margin-top: 100px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 350px;
+	background: #E0FFFF;
+	border-color: black;
+	border-width: 10px;
+	border: 4px double black;
+	padding: 10px;
+}
+span#word{
+	padding: 100x;
+}
+span#athour{
+	color: grey;
+}
+div#myButton{
+	color: #2E8B57;
+	font-size: 28px;
+	text-align: right;
+	font-style: normal;
+	font-weight: bold;
+	margin-right: 50px;
+}
