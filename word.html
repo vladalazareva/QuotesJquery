@@ -1,48 +1,48 @@
-<!DOCTYPE html> 
-<html> 
-	<head> 
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script> 
-		<link href="word.css" rel="stylesheet">
-		<script type="text/javascript"> 
-			var arr = ["Что хочешь помнить, то всегда помнишь.",
-						"И вообще не бывает так, чтобы все стало, как было.", 
-						"Громким смехом не скроешь дикой боли.", 
-						"Берегите в себе человека.",
-						"Пока человек не сдается, он сильнее своей судьбы.",
-						"Поверь мне — счастье только там, Где любят нас, где верят нам!", ]; 
-			var arrname = [ "Р. Бредбери",
-							"М. Булгаков",
-						    "М. Цветаева",
-						    "А. Чехов",
-						    "Э. Ремарк",
-						    "М. Лермонтов"]; 
-			 
-			$(document).ready (function(evrent) { 
-			$ (init); 
-			}); 
-			function init () { 
-			$("#myButton").bind("click", click_button); 
-			} 
-			function getRandomInt(min, max) {
-			  return Math.floor(Math.random() * (max - min)) + min;
-			}
-			function click_button () { 
-				var ran = getRandomInt(0, 6);
-				$("#word").empty();	
-				$("#athour").empty();							
-				$("#word").append(arr[ran]); 
-				$("#athour").append(arrname[ran]);
-				
-			} 
-		</script> 
-	</head> 
-	<body> 
-	<div class="container"> 
-		<p>
-			<span id="word">Цитаты великих писателей</span><br>
-			<span id="athour"></span>
-		</p> 
-			<div id="myButton">Новая цитата</div>
-	</div> 
-	</body>
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<link href="word.css" rel="stylesheet">
+	<script type="text/javascript">
+        var arr = ["Что хочешь помнить, то всегда помнишь.",
+            "И вообще не бывает так, чтобы все стало, как было.",
+            "Громким смехом не скроешь дикой боли.",
+            "Берегите в себе человека.",
+            "Пока человек не сдается, он сильнее своей судьбы.",
+            "Поверь мне — счастье только там, Где любят нас, где верят нам!", ];
+        var arrname = [ "Р. Бредбери",
+            "М. Булгаков",
+            "М. Цветаева",
+            "А. Чехов",
+            "Э. Ремарк",
+            "М. Лермонтов"];
+
+        $(document).ready (function(evrent) {
+            $ (init);
+        });
+        function init () {
+            $("#myButton").bind("click", clickButton);
+        }
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+        function clickButton () {
+            var ran = getRandomInt(0, 6);
+            $("#word").empty();
+            $("#athour").empty();
+            $("#word").append(arr[ran]);
+            $("#athour").append(arrname[ran]);
+
+        }
+	</script>
+</head>
+<body>
+<div class="container">
+	<p>
+		<span id="word">Цитаты великих писателей</span><br>
+		<span id="athour"></span>
+	</p>
+	<div id="myButton">Новая цитата</div>
+</div>
+</body>
 </html>
